@@ -1,1 +1,131 @@
+body {
+    display: felx; 
+    flex-direction: column; 
+}
 
+
+
+.navbar-items {
+    display : flex; 
+    justify-content : center; 
+    justify-content : space-around;
+    list-style: none;
+    background-color:#265057 ;
+    font-size: 20px;
+    box-shadow : 0px 3px 15px #b3b3b3;
+    align-items: center;  
+    font-family: 'Kalam', cursive;
+    
+}
+
+
+
+.navbar-items a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+    color : #c2273b; 
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+
+.contenu-footer {
+    display: grid; 
+    grid-gap : 20px; 
+    grid-template-rows: minimax(100px,auto);
+    grid-template-columns: 300px 300px;
+    background-color: #265057;
+    color: whitesmoke;
+  
+}
+
+
+
+.plan {
+    display: grid;
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2; 
+    margin : 16px ; 
+    justify-content: center;
+  
+}
+
+
+.list-horaires{
+    list-style : none; 
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+    margin: 16px; 
+}
+
+
+.list-contact {
+    list-style : none; 
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-column: 1 / 2;
+    margin: 16px;
+    
+}
+
+.follow {
+    display: grid;
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    margin : 16px ; 
+    justify-content: center;
+}
+
+#logo-fbk {
+    width:40px;
+    text-align: center; 
+}
+
+#logo-insta {
+    width:40px; 
+    justify-content: center;
+}
+
+#plan {
+    width : 200px;
+}
+
+@media screen and (max-width : 1100px){
+    .navbar-items {
+        display : grid; 
+        grid-gap : 10px; 
+        grid-template-rows: repeat(5, 20px);
+        text-align : center; 
+        list-style: none;
+        background-color:#265057 ;
+        font-size: 20px;
+        box-shadow : 0px 3px 15px #b3b3b3;} 
+
+        
+    }
+
+    .navbar {
+        display : block; 
+    }
+    
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    
+    .logo {
+        width: 100px;
+        height: auto;
+       
+        display : grid; 
+        grid-row-start: 1;
+        text-align : center;
+    }
