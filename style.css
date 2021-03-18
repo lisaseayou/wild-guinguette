@@ -45,7 +45,6 @@ a:hover {
 }
 
 footer {
-
     position:absolute;
     bottom:0;
     width:100%;
@@ -61,6 +60,7 @@ footer {
     grid-template-columns: 300px 300px;
     background-color: #265057;
     color: whitesmoke;
+    font-family: 'Baloo 2', cursive;
   
 }
 
@@ -71,7 +71,7 @@ footer {
     grid-column: 2 / 3; 
     grid-row: 1 / 2; 
     margin : 16px ; 
-    justify-content: center;
+    
   
 }
 
