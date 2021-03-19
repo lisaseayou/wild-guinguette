@@ -1,1 +1,26 @@
+#presentation {
+display: flex;
+flex-direction : row;
+align-items: center;
+justify-content: space-around;
+}
 
+.texte{
+	flex-wrap: wrap;
+	width: 50%;
+	text-align: justify;
+}
+ 
+
+@media all and (max-device-width : 480px) {
+#presentation {
+	flex-direction : column;
+ 	justify-content: space-between; 
+
+ 	}
+ .texte {
+ 	text-align: left;
+ }
+
+
+}
