@@ -1,3 +1,9 @@
+#presentation {
+display: flex;
+flex-direction : row;
+align-items: center;
+justify-content: space-around;
+}
 
 *{
 margin:0;
@@ -150,3 +156,53 @@ footer {
         grid-row-start: 1;
         text-align : center;
     }
+.texte{
+	flex-wrap: wrap;
+	width: 50%;
+	text-align: justify;
+}
+ 
+
+@media all and (max-device-width : 480px) {
+#presentation {
+	flex-direction : column;
+ 	justify-content: space-between; 
+
+ 	}
+ .texte {
+ 	text-align: left;
+ }
+
+
+.slider {
+  width: 640px;
+  overflow: hidden;
+  margin: 100px auto;
+}
+
+.slides {
+  width: 400%;
+  animation: slide 15s infinite;
+}
+
+.slide {
+  float: left;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  33.333% {
+    transform: translateX(-640px);
+  }
+  66.666% {
+    transform: translateX(-1280px);
+  }
+  99.999% {
+    transform: translateX(-1920px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
