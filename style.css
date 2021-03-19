@@ -1,0 +1,92 @@
+h1 {
+    font-size: 40px;
+    font-family: Didot, serif;
+    margin: 50px 0px;
+    text-align: center;
+    color: black;
+  }
+
+  .grille {
+      max-width: 1300px;
+      width: 80%;
+      height: auto;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 350px);
+      justify-content: center;
+      grid-gap: 15px;      
+  }
+
+  .grid-item {
+      width: 350px;
+      height: 350px;
+  }
+
+.introduction {
+    display:block;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+img {
+    width: 350px; 
+    height: 350px; 
+    object-fit: cover; 
+    position: absolute;
+    overflow: hidden;
+    text-align:center; 
+    }
+
+.beer:hover {
+    opacity: 0.7;
+    }
+
+.wine:hover {
+    opacity: 0.7;
+    }
+
+.cocktail:hover {
+    opacity: 0.7;
+    }
+.tapas:hover {
+    opacity: 0.7;
+    }
+
+.burger:hover {
+    opacity: 0.7;
+    }
+
+.dessert:hover {
+    opacity: 0.7;
+    }
+
+.name {
+  font-family: Snell Roundhand, cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: #da8937;
+}
+
+.description {
+  font-family: Didot, serif;
+  text-align: center;
+  font-style: bold;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.clic{
+    display: none;
+  }
+
+.button {
+  font-family: Didot, serif;
+  text-align: center;
+  font-style: bold;
+  margin-top: 20px;
+  font-size: 15px;
+}
