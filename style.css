@@ -1,1 +1,32 @@
+.slider {
+  width: 640px;
+  overflow: hidden;
+  margin: 100px auto;
+}
 
+.slides {
+  width: 400%;
+  animation: slide 15s infinite;
+}
+
+.slide {
+  float: left;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  33.333% {
+    transform: translateX(-640px);
+  }
+  66.666% {
+    transform: translateX(-1280px);
+  }
+  99.999% {
+    transform: translateX(-1920px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
