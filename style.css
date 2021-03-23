@@ -1,41 +1,135 @@
-<<<<<<< HEAD
-#presentation {
-display: flex;
-flex-direction : row;
-align-items: center;
-justify-content: space-around;
-}
 
-*{
-margin:0;
-padding:0;
+h1 {
+    font-size: 40px;
+    font-family: Didot, serif;
+    margin: 50px 0px;
+    text-align: center;
+    color: black;
+  }
+
+  .grillemenu {
+      max-width: 1300px;
+      width: 80%;
+      height: auto;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 350px);
+      justify-content: center;
+      grid-gap: 15px;      
+  }
+
+  .grid-menu {
+      width: 350px;
+      height: 350px;
+  }
+
+
+  .grid-menu p {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .grid-menu:hover p {
+    opacity: 1;
+  }
+  .grid-menu:hover img { 
+    opacity:0.7
+  }
+
+.introductionmenu {
+    display:block;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+img {
+    width: 350px; 
+    height: 350px; 
+    object-fit: cover; 
+    position: absolute;
+    overflow: hidden;
+    text-align:center; 
+    z-index: -1;
     }
 
-body, html{
-    height:100%;
+/* .beer:hover {
+    opacity: 0.7;
+    }
+
+.wine:hover {
+    opacity: 0.7;
+    }
+
+.cocktail:hover {
+    opacity: 0.7;
+    }
+.tapas:hover {
+    opacity: 0.7;
+    }
+
+.burger:hover {
+    opacity: 0.7;
+    }
+
+.dessert:hover {
+    opacity: 0.7;
+    } */
+
+
+.menuofmoment {
+  display: flex;
+  justify-content: center;
 }
 
-    body {
-    display: felx; 
-    flex-direction: column; 
+
+.namemenu {
+  font-family: Snell Roundhand, cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: #da8937;
 }
 
+.descriptionmenu {
+  font-family: Didot, serif;
+  text-align: center;
+  font-style: bold;
+  margin-top: 20px;
+  font-size: 15px;
+}
 
+.buttonmenu {
+  font-family: Didot, serif;
+  text-align: center;
+  font-style: bold;
+  margin-top: 20px;
+  font-size: 15px;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav */
+.lisa {
+  padding: 50px 50px;
+  border: 1px solid red;
+}
 .navbar-items {
-    display : flex; 
-    justify-content : center; 
-    justify-content : space-around;
-    list-style: none;
-    background-color:#265057 ;
-    font-size: 20px;
-    box-shadow : 0px 3px 15px #b3b3b3;
-    align-items: center;  
-    font-family: 'Kalam', cursive;
-    
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #265057;
+  font-size: 20px;
+  box-shadow: 0px 3px 15px #b3b3b3;
+  align-items: center;
+  font-family: "Kalam", cursive;
 }
-
-
 
 .navbar-items a {
   text-decoration: none;
@@ -43,137 +137,79 @@ body, html{
 }
 
 a:hover {
-    color : #c2273b; 
+  color: #c2273b;
 }
 
 .logo {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
-footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    padding-top:50px;
-    height:50px;
-    
-}
-
-.contenu-footer {
-    display: grid; 
-    grid-gap : 20px; 
-    grid-template-rows: minimax(100px,auto);
-    grid-template-columns: 300px 300px;
+@media screen and (max-width: 1100px) {
+  .navbar-items {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 20px);
+    text-align: center;
+    list-style: none;
     background-color: #265057;
-    color: whitesmoke;
-    font-family: 'Baloo 2', cursive;
-  
+    font-size: 20px;
+    box-shadow: 0px 3px 15px #b3b3b3;
+  }
 }
 
-
-
-.plan {
-    display: grid;
-    grid-column: 2 / 3; 
-    grid-row: 1 / 2; 
-    margin : 16px ; 
-    
-  
+.navbar {
+  display: block;
 }
 
-
-.list-horaires{
-    list-style : none; 
-    padding: 0px 0px 0px 0px;
-    display: grid;
-    grid-column: 1 / 2 ;
-    grid-row: 2 / 3;
-    margin: 16px; 
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
+.logo {
+  width: 100px;
+  height: auto;
 
-.list-contact {
-    list-style : none; 
-    padding: 0px 0px 0px 0px;
-    display: grid;
-    grid-column: 1 / 2;
-    margin: 16px;
-    
+  display: grid;
+  grid-row-start: 1;
+  text-align: center;
 }
 
-.follow {
-    display: grid;
-    grid-column: 2 / 3; 
-    grid-row: 2 / 3; 
-    margin : 16px ; 
-    
+/*video*/
+.esther {
+  padding: 50px 50px;
+  border: 1px solid red;
 }
-
-#logo-fbk {
-    width:40px;
-    display: flex;
-    justify-content: flex-start; 
-}
-
-#logo-insta {
-    width:40px; 
-    display : flex;
-    justify-content: flex-end; 
-}
-
-#plan {
-    width : 250px;
-}
-
-@media screen and (max-width : 1100px){
-    .navbar-items {
-        display : grid; 
-        grid-gap : 10px; 
-        grid-template-rows: repeat(5, 20px);
-        text-align : center; 
-        list-style: none;
-        background-color:#265057 ;
-        font-size: 20px;
-        box-shadow : 0px 3px 15px #b3b3b3;} 
-
-        
-    }
-
-    .navbar {
-        display : block; 
-    }
-    
-    a {
-      text-decoration: none;
-      color: whitesmoke;
-    }
-    
-    .logo {
-        width: 100px;
-        height: auto;
-       
-        display : grid; 
-        grid-row-start: 1;
-        text-align : center;
-    }
-.texte{
-	flex-wrap: wrap;
-	width: 50%;
-	text-align: justify;
-}
- 
+/*
+#presentation {
+  display: flex;
+  flex-direction : row;
+  align-items: center;
+  justify-content: space-around;
+  }
 
 @media all and (max-device-width : 480px) {
 #presentation {
-	flex-direction : column;
- 	justify-content: space-between; 
+  flex-direction : column;
+  justify-content: space-between; 
+}
 
- 	}
- .texte {
- 	text-align: left;
- }
+.texte {
+  text-align: left;
+}
 
+.texte {
+  flex-wrap: wrap;
+  width: 50%;
+  text-align: justify;
+}
+
+/*slider*/
+.antoine {
+  padding: 50px 50px;
+  border: 1px solid red;
+}
 
 .slider {
   width: 640px;
@@ -207,97 +243,74 @@ footer {
     transform: translateX(0px);
   }
 }
-=======
-h1 {
-    font-size: 40px;
-    font-family: Didot, serif;
-    margin: 50px 0px;
-    text-align: center;
-    color: black;
-  }
 
-  .grille {
-      max-width: 1300px;
-      width: 80%;
-      height: auto;
-      margin: 30px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 350px);
-      justify-content: center;
-      grid-gap: 15px;      
-  }
+/*footer*/
 
-  .grid-item {
-      width: 350px;
-      height: 350px;
-  }
-
-.introduction {
-    display:block;
-    padding: 30px;
-    text-align: justify;
-    text-indent: 30px;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-  
-img {
-    width: 350px; 
-    height: 350px; 
-    object-fit: cover; 
-    position: absolute;
-    overflow: hidden;
-    text-align:center; 
-    }
-
-.beer:hover {
-    opacity: 0.7;
-    }
-
-.wine:hover {
-    opacity: 0.7;
-    }
-
-.cocktail:hover {
-    opacity: 0.7;
-    }
-.tapas:hover {
-    opacity: 0.7;
-    }
-
-.burger:hover {
-    opacity: 0.7;
-    }
-
-.dessert:hover {
-    opacity: 0.7;
-    }
-
-.name {
-  font-family: Snell Roundhand, cursive;
-  font-weight: bold;
-  text-align: center;
-  font-size: 30px;
-  color: #da8937;
+.footer-section{
+  padding: 50px 50px;
+  border: 1px solid red;
 }
 
-.description {
-  font-family: Didot, serif;
-  text-align: center;
-  font-style: bold;
-  margin-top: 20px;
-  font-size: 15px;
+footer {
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  height: 50px;
 }
 
-.clic{
-    display: none;
-  }
-
-.button {
-  font-family: Didot, serif;
-  text-align: center;
-  font-style: bold;
-  margin-top: 20px;
-  font-size: 15px;
+.contenu-footer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: minimax(100px, auto);
+  grid-template-columns: 300px 300px;
+  background-color: #265057;
+  color: whitesmoke;
+  font-family: "Baloo 2", cursive;
 }
->>>>>>> menu
+
+.list-horaires {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 16px;
+}
+
+.list-contact {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  display: grid;
+  grid-column: 1 / 2;
+  margin: 16px;
+}
+
+.plan {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin: 16px;
+}
+
+.follow {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin: 16px;
+}
+
+#logo-fbk {
+  width: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo-insta {
+  width: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#plan {
+  width: 250px;
+}
