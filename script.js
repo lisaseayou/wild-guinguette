@@ -1,9 +1,19 @@
+/*
 var buttonPopup = document.getElementById('button-popup');
 var overlay = document.getElementById('overlay');
 button-popup.addEventListener('click',openMoadl);
 function openMoadl() {
 overlay.style.display='block';
-}
+}*/
+
+document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+
+})
+
+document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
 
 
 var button = document.getElementsByClassName('button')[0];

@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="style.css"  />
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Indie+Flower&family=Kalam&display=swap" rel="stylesheet">
-     <script src="script.js"></script>
     <title>Projet Guinguette</title>  
 </head>
 
@@ -39,16 +38,19 @@
            La Guinguette suit ainsi son cap : stimuler la curiosité, la bienveillance et la créativité, développer les compétences, échanger les savoirs, réveiller le désir d’éducation et de partage chez chacun d’entre nous.
            L’esprit de la Guinguette s’étaye sur la volonté de créer du lien, de favoriser le partenariat et de s’impliquer dans le paysage culturel et social du quartier, de la ville.</p>
         </div>
-      </div>
       <div class="video"> 
-          <video controls autoplay muted preload ="auto" id="idvideo" width = "600"> 
+          <video controls autoplay muted preload ="auto" id="idvideo" width = "715"> 
             <source src="concert.mp4" type="video/mp4"> 
             <p> Votre vidéo ne prend pas en charge les vidéos HTML5 </p> 
           </video>
       </div>
+    </div>
     </section>
 
-    <section class="antoine"><!-- slider antoine -->
+<!-- slider antoine -->
+
+    <section class="antoine">
+        <h2>Les concerts</h2>
       <div class="slider">
         <div class="slides">
           <div class="slide"><img src="img/img-concert.jpg" alt="" /></div>
@@ -56,63 +58,90 @@
           <div class="slide"><img src="img/img-3.jpg" alt="" /></div>
           <div class="slide"><img src="img/img-concert.jpg" alt="" /></div>
         </div>
-      </div>
+        </div>
+      
+        <!-- Bouton de reservation-->
+        <div class="container">
+            <a href="#" id="button" class="button">Réserver</a>
+        </div>
+        <div class="popup"> 
+            <div class="popup-content"> 
+            <img src="croix.png" alt="Close" class="close">
+        <h2>Choisir un concert</h2>
+        <form action="#" name= "choix">
+            <select name ="liste">
+                <option value="José le 15 mars 2021 à 20h">José le 15 mars 2021 à 18h</option>
+                <option value="Fred le 20 avril 2021 à 20h">Fred le 20 avril 2021 à 20h</option>
+                <option value="Sophie le 15 mai 2021 à 20h">Sophie le 15 mai 2021 à 20h</option>
+                <option value="Jeanne le 25 juin 2021 à 20h">Jeanne le 25 juin 2021 à 20h</option>
+            </select>
+            <p>Nb places</p>
+            <input type="number"  name="quantite" min="1" max="10">
+        </form>
+                <br/>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Prénom">
+                <input type="email" placeholder="Email" >
+                <a href="#" class="button">Envoyer</a>
+             </div>
+        </div>
     </section>
+
 
     <section id="menu">
         <h1>Manger & Boire</h1>
-        <p class="introduction">Notre cuisine se veux fraîche & de saison, sans prise de tête, 
+        <p class="introductionmenu">Notre cuisine se veux fraîche & de saison, sans prise de tête, 
             avec des produits locaux et bio. Venez prendre l’apéro autour d’une belle assiette 
             de tapas et un bon verre de vin, tout ça dans une ambiance conviviale et festive!</p>
         <div>
 
-            <div class="grille">
 
-                <div class="grid-item">
-                    <img src="thais-do-rio-EUO7L470LXk-unsplash.jpg" class="beer" />
-                    <p class="name">Biéres</p>
-                    <p class="description">Blonde, Ambrée, Rousse</p>
+            <div class="grillemenu">
+
+                <div class="grid-menu">
+                    <img src="thais-do-rio-EUO7L470LXk-unsplash.jpg" class="imagemenu"/>
+                    <p class="namemenu">Biéres</p>
+                    <p class="descriptionmenu">Blonde, Ambrée, Rousse</p>
                 </div>
               
-                 <div class="grid-item">
-                    <img src="diogo-brandao-9mLS2i-BmFA-unsplash.jpg" class="wine" />
-                    <p class="name">Vins</p>
-                    <p class="description">Bordeaux, Pessac, Chili</p>
+                 <div class="grid-menu">
+                    <img src="diogo-brandao-9mLS2i-BmFA-unsplash.jpg" class="imagemenu" />
+                    <p class="namemenu">Vins</p>
+                    <p class="descriptionmenu">Bordeaux, Pessac, Chili</p>
                 </div>
 
-                <div class="grid-item">
-                    <img src="sandra-seitamaa-akwA-GPF710-unsplash.jpg" class="cocktail" />
-                    <p class="name">Cocktails</p>
-                    <p class="description">Punch, Sangria, Mojito</p>
+                <div class="grid-menu">
+                    <img src="sandra-seitamaa-akwA-GPF710-unsplash.jpg" class="imagemenu" />
+                    <p class="namemenu">Cocktails</p>
+                    <p class="descriptionmenu">Punch, Sangria, Mojito</p>
                 </div>
                 
-                <div class="grid-item">
-                    <img src="maddi-bazzocco-cVmNIJCa1XA-unsplash.jpg" class="tapas" />
-                    <p class="name">Tapas</p>
-                    <p class="description">Charcut, Fromages, Vege</p>
+                <div class="grid-menu">
+                    <img src="maddi-bazzocco-cVmNIJCa1XA-unsplash.jpg" class="imagemenu" />
+                    <p class="namemenu">Tapas</p>
+                    <p class="descriptionmenu">Charcut, Fromages, Vege</p>
                 </div>
                 
-                <div class="grid-item">
-                    <img src="delfina-cocciardi-NDPBK-d-03M-unsplash.jpg" class="burger" />
-                    <p class="name">Burger</p>
-                    <p class="description">Omni ou Vege</p>
+                <div class="grid-menu">
+                    <img src="delfina-cocciardi-NDPBK-d-03M-unsplash.jpg" class="imagemenu" />
+                    <p class="namemenu">Burger</p>
+                    <p class="descriptionmenu">Omni ou Vege</p>
                 </div>
                 
-                <div class="grid-item">
-                    <img src="food-photographer-jennifer-pallian-8Jg4U4xHu-o-unsplash.jpg" class="dessert "/>
-                    <p class="name">Dessert</p>
-                    <p class="description">Gateau & Ice Cream</p>
+                <div class="grid-menu">
+                    <img src="food-photographer-jennifer-pallian-8Jg4U4xHu-o-unsplash.jpg" class="imagemenu"/>
+                    <p class="namemenu">Dessert</p>
+                    <p class="descriptionmenu">Gateau & Ice Cream</p>
                 </div>
             </div>
         </div>
-    </br></br></br></br>
-    
-    <div class = "menu">
-        <button class = "button">Le Menu du Moment</button>
+    <!--
+    <div class = "menuofmoment">
+        <button class = "buttonmenu">Le Menu du Moment</button>
         <img src="dan-burton-5JtuW6PqGKE-unsplash.jpg" class="imgmenu"/>
         <script src="script.js"></script>
     </div>
-
+-->
     </section>
 
 
@@ -152,6 +181,7 @@
      </footer>
     </section>
   
+    <script src="script.js"></script>
   </body>
   </html>
-  
+ 

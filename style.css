@@ -1,124 +1,10 @@
-
-h1 {
-    font-size: 40px;
-    font-family: Didot, serif;
-    margin: 50px 0px;
-    text-align: center;
-    color: black;
-  }
-
-  .grillemenu {
-      max-width: 1300px;
-      width: 80%;
-      height: auto;
-      margin: 30px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 350px);
-      justify-content: center;
-      grid-gap: 15px;      
-  }
-
-  .grid-menu {
-      width: 350px;
-      height: 350px;
-  }
-
-
-  .grid-menu p {
-    opacity: 0;
-    transition: all 0.3s;
-  }
-
-  .grid-menu:hover p {
-    opacity: 1;
-  }
-  .grid-menu:hover img { 
-    opacity:0.7
-  }
-
-.introductionmenu {
-    display:block;
-    padding: 30px;
-    text-align: justify;
-    text-indent: 30px;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-  
-img {
-    width: 350px; 
-    height: 350px; 
-    object-fit: cover; 
-    position: absolute;
-    overflow: hidden;
-    text-align:center; 
-    z-index: -1;
-    }
-
-/* .beer:hover {
-    opacity: 0.7;
-    }
-
-.wine:hover {
-    opacity: 0.7;
-    }
-
-.cocktail:hover {
-    opacity: 0.7;
-    }
-.tapas:hover {
-    opacity: 0.7;
-    }
-
-.burger:hover {
-    opacity: 0.7;
-    }
-
-.dessert:hover {
-    opacity: 0.7;
-    } */
-
-
-.menuofmoment {
-  display: flex;
-  justify-content: center;
-}
-
-
-.namemenu {
-  font-family: Snell Roundhand, cursive;
-  font-weight: bold;
-  text-align: center;
-  font-size: 30px;
-  color: #da8937;
-}
-
-.descriptionmenu {
-  font-family: Didot, serif;
-  text-align: center;
-  font-style: bold;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-.buttonmenu {
-  font-family: Didot, serif;
-  text-align: center;
-  font-style: bold;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
 /* nav */
-.lisa {
-  padding: 50px 50px;
-  border: 1px solid red;
-}
+
 .navbar-items {
   display: flex;
   justify-content: center;
@@ -129,6 +15,7 @@ img {
   box-shadow: 0px 3px 15px #b3b3b3;
   align-items: center;
   font-family: "Kalam", cursive;
+  height: 85px;
 }
 
 .navbar-items a {
@@ -145,70 +32,39 @@ a:hover {
   height: auto;
 }
 
-@media screen and (max-width: 1100px) {
-  .navbar-items {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-rows: repeat(5, 20px);
-    text-align: center;
-    list-style: none;
-    background-color: #265057;
-    font-size: 20px;
-    box-shadow: 0px 3px 15px #b3b3b3;
-  }
-}
 
-.navbar {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-
-  display: grid;
-  grid-row-start: 1;
-  text-align: center;
-}
-
-/*video*/
-.esther {
-  padding: 50px 50px;
-  border: 1px solid red;
-}
-/*
 #presentation {
   display: flex;
-  flex-direction : row;
-  align-items: center;
   justify-content: space-around;
-  }
-
-@media all and (max-device-width : 480px) {
-#presentation {
-  flex-direction : column;
-  justify-content: space-between; 
+  align-items: center;
+  margin-top: 20px;
 }
 
 .texte {
-  text-align: left;
+  padding: 40px 40px;
+  text-align : justify;
 }
+ .texte h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
 
-.texte {
-  flex-wrap: wrap;
-  width: 50%;
-  text-align: justify;
-}
+ }
+
+
+
 
 /*slider*/
+.antoine h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+
+
+} 
 .antoine {
   padding: 50px 50px;
-  border: 1px solid red;
+  
 }
 
 .slider {
@@ -244,14 +100,196 @@ a {
   }
 }
 
-/*footer*/
 
-.footer-section{
-  padding: 50px 50px;
-  border: 1px solid red;
+/*bouton reserver */
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -50px ;
 }
 
+.button {
+  background-color: rgb(39, 165, 165);
+  padding: 10px 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0, 4s;
+
+}
+
+.button:hover {
+  background: #233f5a;
+  color: #ffff;
+}
+
+.popup {
+  background: rgb(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-content {
+  height: 350px;
+  width: 500px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.popup-content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  align-self: flex-start;
+  position: absolute;
+  margin-top: 2%;
+}
+
+input {
+  margin: 15px auto;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+}
+select {
+  border: 1px solid gray;
+  width: 40%;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.popup p {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 6%;
+}
+input[type="number"] {
+  width: 13%;
+  position: absolute;
+  margin: 1px 20px 1px 100px;
+  padding: 2px 2px 2px 2px;
+  margin-top: -7%;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#menu h1 {
+  font-size: 40px;
+  font-family: Didot, serif;
+  margin: 50px 0px;
+  text-align: center;
+  color: black;
+}
+
+.grillemenu {
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    grid-gap: 15px;      
+}
+
+.grid-menu {
+    width: 350px;
+    height: 350px;
+}
+
+
+.grid-menu p {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.grid-menu:hover p {
+  opacity: 1;
+}
+.grid-menu:hover img { 
+  opacity:0.7
+}
+
+.introductionmenu {
+  display:block;
+  padding: 30px;
+  text-align: justify;
+  text-indent: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.imagemenu {
+  width: 350px; 
+  height: 350px; 
+  object-fit: cover; 
+  position: absolute;
+  overflow: hidden;
+  text-align:center; 
+  z-index: -1;
+}
+/*
+
+.menuofmoment {
+display: flex;
+justify-content: center;
+}
+*/
+
+.namemenu {
+font-family: Snell Roundhand, cursive;
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+color: #da8937;
+}
+
+.descriptionmenu {
+font-family: Didot, serif;
+text-align: center;
+font-style: bold;
+margin-top: 20px;
+font-size: 15px;
+}
+
+.buttonmenu {
+font-family: Didot, serif;
+text-align: center;
+font-style: bold;
+margin-top: 20px;
+font-size: 15px;
+}
+
+
+
+
 footer {
+ 
   bottom: 0;
   width: 100%;
   padding-top: 50px;
@@ -261,11 +299,18 @@ footer {
 .contenu-footer {
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: minimax(100px, auto);
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #265057;
   color: whitesmoke;
   font-family: "Baloo 2", cursive;
+}
+
+.plan {
+  display : grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin : 16px;
+
 }
 
 .list-horaires {
@@ -285,17 +330,10 @@ footer {
   margin: 16px;
 }
 
-.plan {
-  display: grid;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  margin: 16px;
-}
+
 
 .follow {
   display: grid;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
   margin: 16px;
 }
 
@@ -314,3 +352,6 @@ footer {
 #plan {
   width: 250px;
 }
+ #plan:hover {
+   width: 470px; 
+ }
