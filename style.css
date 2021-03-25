@@ -59,18 +59,25 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
-
-
 } 
+
+.slide-img-text{
+  position: relative;
+  bottom: 45px;
+  padding: 5px;
+  color: white;
+  font-size: 1.4em;
+  text-align: right;
+  }
+
 .antoine {
   padding: 50px 50px;
-  
 }
 
 .slider {
   width: 640px;
   overflow: hidden;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 
 .slides {
