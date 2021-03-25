@@ -15,6 +15,10 @@ document.querySelector(".close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 });
 
+document.getElementById("btn").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+
 
 var button = document.getElementsByClassName('button')[0];
 var image = document.getElementsByClassName('imgmenu')[0];
