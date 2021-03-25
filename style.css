@@ -107,9 +107,20 @@ a:hover {
   font-family: 'New Tegomin', serif;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   font-size: 40px;
+  margin-bottom: 50px;
 } 
+
+.slide-img-text{
+  position: relative;
+  bottom: 60px;
+  padding: 5px;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Kalam", cursive;
+
+  }
 
 .antoine {
   padding: 50px 50px;
@@ -153,20 +164,20 @@ a:hover {
 /*bouton reserver */
 
 .container {
-  display: flex;
   justify-content: center;
   text-align: center;
   margin-top: -20px ;
+  padding: 50px;
 
 }
 
 .button {
-  font-family: 'New Tegomin', serif;
+  font-family: "Kalam", cursive;
   background-color: rgb(39, 165, 165);
   padding: 10px 15px;
   color: rgb(255, 255, 255);
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 25px;
   border-radius: 10px;
   text-decoration: none;
   transition: 0, 4s;
@@ -386,7 +397,7 @@ footer {
 }
 
 #bouton-contact {
-  font-family: "New Tegomin", serif;
+  font-family: "Kalam", cursive;
   background-color: rgb(39, 165, 165);
   margin: 5px;
   color: rgb(255, 255, 255);
