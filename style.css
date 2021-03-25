@@ -24,7 +24,7 @@
 }
 
 a:hover {
-  color: #c2273b;
+  color: #DD3D49;
 }
 
 .logo {
@@ -33,6 +33,13 @@ a:hover {
 }
 
 
+/* Video */  
+
+
+.esther{
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
 #presentation {
   display: flex;
   justify-content: space-around;
@@ -41,13 +48,20 @@ a:hover {
 }
 
 .texte {
-  padding: 40px 40px;
+  padding: 100px 100px;
   text-align : justify;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+
 }
  .texte h2 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 35px;
+  font-size: 30px;
+  color: #DD3D49;
+  font-family: 'New Tegomin', serif;
+
 
  }
 
@@ -56,21 +70,27 @@ a:hover {
 
 /*slider*/
 .antoine h2 {
+  color: #DD3D49;
+  font-family: 'New Tegomin', serif;
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  
 
 
 } 
 .antoine {
   padding: 50px 50px;
+  background-image: url("Web 1920 – 1.png");
+  background-size: cover;
   
 }
 
 .slider {
   width: 640px;
   overflow: hidden;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .slides {
@@ -107,7 +127,7 @@ a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: -50px ;
+  margin-top: -20px ;
 }
 
 .button {
@@ -120,11 +140,12 @@ a:hover {
   border-radius: 10px;
   text-decoration: none;
   transition: 0, 4s;
+  font-family: "Kalam", cursive;
 
 }
 
 .button:hover {
-  background: #233f5a;
+  background: #DD3D49;
   color: #ffff;
 }
 
@@ -199,22 +220,32 @@ input[type="number"] {
 }
 
 
+
+/*anais*/
+
+#menu {
+
+}
+
+
 #menu h1 {
   font-size: 40px;
-  font-family: Didot, serif;
   margin: 50px 0px;
   text-align: center;
-  color: black;
+  color: #DD3D49;
+  font-family: 'New Tegomin', serif;
 }
 
 .grillemenu {
+    max-width: 1300px;
     width: 80%;
     height: auto;
     margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
-    grid-gap: 15px;      
+    grid-gap: 15px;
+    margin-bottom: 80px;  
 }
 
 .grid-menu {
@@ -232,16 +263,16 @@ input[type="number"] {
   opacity: 1;
 }
 .grid-menu:hover img { 
-  opacity:0.7
+  opacity:0.5;
 }
 
 .introductionmenu {
-  display:block;
-  padding: 30px;
-  text-align: justify;
-  text-indent: 30px;
-  margin-left: 300px;
-  margin-right: 300px;
+ margin-left: 300px;
+ margin-right: 300px;
+ margin-bottom: 70px;
+  text-align : justify;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
 }
 
 .imagemenu {
@@ -253,40 +284,30 @@ input[type="number"] {
   text-align:center; 
   z-index: -1;
 }
-/*
-
-.menuofmoment {
-display: flex;
-justify-content: center;
-}
-*/
 
 .namemenu {
-font-family: Snell Roundhand, cursive;
-font-weight: bold;
-text-align: center;
-font-size: 30px;
-color: #da8937;
+  font-family: 'New Tegomin', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  color: #265057;
+  margin-top: 120px;
+
 }
 
 .descriptionmenu {
-font-family: Didot, serif;
-text-align: center;
-font-style: bold;
-margin-top: 20px;
-font-size: 15px;
-}
-
-.buttonmenu {
-font-family: Didot, serif;
-text-align: center;
-font-style: bold;
-margin-top: 20px;
-font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #DD3D49;
+  font-family: 'Pacifico', cursive;
 }
 
 
 
+
+
+/*footer*/
 
 footer {
  
