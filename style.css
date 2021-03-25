@@ -3,8 +3,21 @@
   padding: 0;
 }
 
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 /* nav */
 
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
 .navbar-items {
   display: flex;
   justify-content: center;
@@ -28,11 +41,34 @@ a:hover {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
+@media screen and (max-width: 1100px) {
+  .navbar-items {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 30px);
+    text-align: center;
+    list-style: none;
+    background-color: #265057;
+    font-size: 20px;
+    box-shadow: 0px 3px 15px #b3b3b3;
+    height: 200px;
+  }
 
 
+  .logo {
+    width: 100px;
+    height: auto;
+    display: grid;
+    grid-row-start: 1;
+    justify-self: center;
+    padding-bottom: 6px;
+  }
+}
+
+/* premiere partie */
 /* Video */  
 
 
@@ -52,19 +88,16 @@ a:hover {
   text-align : justify;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
-
 }
- .texte h2 {
+
+.texte h2 {
   display: flex;
   justify-content: left;
   margin-bottom: 35px;
   font-size: 30px;
   color: #DD3D49;
   font-family: 'New Tegomin', serif;
-
-
  }
-
 
 
 
@@ -76,15 +109,12 @@ a:hover {
   justify-content: center;
   margin-bottom: 20px;
   font-size: 40px;
-  
-
-
 } 
+
 .antoine {
   padding: 50px 50px;
   background-image: url("Web 1920 – 1.png");
   background-size: cover;
-  
 }
 
 .slider {
@@ -120,7 +150,6 @@ a:hover {
   }
 }
 
-
 /*bouton reserver */
 
 .container {
@@ -128,6 +157,7 @@ a:hover {
   justify-content: center;
   text-align: center;
   margin-top: -20px ;
+
 }
 
 .button {
@@ -140,14 +170,11 @@ a:hover {
   border-radius: 10px;
   text-decoration: none;
   transition: 0, 4s;
-  font-family: "Kalam", cursive;
-
 }
 
 .button:hover {
-
   background: #c2273b;;
-  color: #ffff;
+  color: #ffff; 
 }
 
 
@@ -260,10 +287,9 @@ input[type="number"] {
 }
 
 .grid-menu {
-    width: 350px;
-    height: 350px;
+  width: 350px;
+  height: 350px;
 }
-
 
 .grid-menu p {
   opacity: 0;
@@ -287,12 +313,12 @@ input[type="number"] {
 }
 
 .imagemenu {
-  width: 350px; 
-  height: 350px; 
-  object-fit: cover; 
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
   position: absolute;
   overflow: hidden;
-  text-align:center; 
+  text-align: center;
   z-index: -1;
 }
 
@@ -321,11 +347,9 @@ input[type="number"] {
 /*footer*/
 
 footer {
- 
-  bottom: 0;
   width: 100%;
-  padding-top: 50px;
-  height: 50px;
+  height: auto;
+
 }
 
 .contenu-footer {
@@ -338,11 +362,10 @@ footer {
 }
 
 .plan {
-  display : grid;
+  display: grid;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  margin : 16px;
-
+  margin: 16px;
 }
 
 .list-horaires {
@@ -362,7 +385,82 @@ footer {
   margin: 16px;
 }
 
+#bouton-contact {
+  font-family: "New Tegomin", serif;
+  background-color: rgb(39, 165, 165);
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 13px;
+  text-decoration: none;
+  transition: 0, 4s;
+  border: white;
+}
 
+#bouton-contact:hover {
+  background-color: #c2273b;
+}
+
+.pop {
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: auto;
+  background-color: #265057;
+  border: solid 2px white;
+  font-family: "Baloo 2", cursive;
+  padding: 10px;
+}
+
+#titre-contact{
+    color: #c2273b;
+}
+.closed {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+input,
+textarea {
+  width: 100%;
+}
+
+input {
+  margin: 5px;
+}
+
+#form-contact {
+  border-radius: 8px;
+  text-align: left;
+  margin: 6px;
+  padding: 6px;
+}
+
+#bouton-envoyer {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "New Tegomin", serif;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 165, 165);
+  border: white;
+}
+
+#bouton-envoyer:hover {
+  color: #c2273b;
+}
 
 .follow {
   display: grid;
@@ -384,6 +482,23 @@ footer {
 #plan {
   width: 250px;
 }
- #plan:hover {
-   width: 470px; 
- }
+#plan:hover {
+  width: 300px;
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+  }
+
+  .contenu-footer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #265057;
+    color: whitesmoke;
+    font-family: "Baloo 2", cursive;
+  }
+}

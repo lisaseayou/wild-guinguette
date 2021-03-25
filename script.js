@@ -27,6 +27,16 @@ window.afficher = function(){
 image.style.display = (image.style.display == "block") ? "none" : "block";
 }
 
-
-
 button.onclick = afficher;
+
+
+const boutonContact = document.getElementById("bouton-contact"); 
+const formulaireContact = document.querySelector(".pop"); 
+
+boutonContact.addEventListener("click", function(){
+    formulaireContact.style.display = 'flex'; 
+});
+
+document.querySelector(".closed").addEventListener("click", function(){
+    document.querySelector(".pop").style.display = "none";
+});
